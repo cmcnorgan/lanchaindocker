@@ -1,2 +1,2 @@
 # lanchaindocker
-Private repo for resume chat
+Contains a python app using langchain developed inside a docker container. The Dockerfile can be built using the included build.sh BASH script, and run on port 8080 using the included run.sh script. Currently set up to act on .docx and .pdf resumes, and on linkedin job description URLs (extracting the 10-digit job id) or else uploaded .docx or .pdf job descriptions. Chromadb is used to persist uploaded resumes so that they only have to be parsed one time.
