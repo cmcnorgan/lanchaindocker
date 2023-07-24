@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "Resume-AI"
+version = "0.1.0"
+description = "A langchain Streamlit App with Docker"
+authors = ["cmcnorgan"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "langchain_app"}]
+
+
+[tool.poetry.dependencies]
+python = "^3.11.4"
+langchain = "^0.0.184"
+openai = "^0.27.7"
+streamlit = "^1.24.0"
+chromadb = "^0.3.29"
+chroma-hnswlib = "^0.7.0"
+pypdf2 = "^3.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
